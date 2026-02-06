@@ -6,7 +6,7 @@ class Employee {
     int age;
     String phone;
     String address;
-    int salary;
+    double salary;   // 🔥 MUST be double
 
     void printSalary() {
         System.out.println(salary);
@@ -35,7 +35,7 @@ public class EmployeeInheritance {
         sc.nextLine();
         officer.phone = sc.nextLine();
         officer.address = sc.nextLine();
-        officer.salary = sc.nextInt();
+        officer.salary = sc.nextDouble();   // 🔥 read as double
         sc.nextLine();
         officer.specialization = sc.nextLine();
 
@@ -46,7 +46,7 @@ public class EmployeeInheritance {
         sc.nextLine();
         manager.phone = sc.nextLine();
         manager.address = sc.nextLine();
-        manager.salary = sc.nextInt();
+        manager.salary = sc.nextDouble();   // 🔥 read as double
         sc.nextLine();
         manager.department = sc.nextLine();
 
@@ -56,7 +56,7 @@ public class EmployeeInheritance {
         System.out.println(officer.age);
         System.out.println(officer.phone);
         System.out.println(officer.address);
-        System.out.println(officer.salary);
+        System.out.println(officer.salary);        // prints .0
         System.out.println(officer.specialization);
 
         System.out.println("Manager:");
@@ -64,7 +64,7 @@ public class EmployeeInheritance {
         System.out.println(manager.age);
         System.out.println(manager.phone);
         System.out.println(manager.address);
-        System.out.println(manager.salary);
+        System.out.println(manager.salary);        // prints .0
         System.out.println(manager.department);
     }
 }
