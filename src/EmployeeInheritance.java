@@ -6,11 +6,7 @@ class Employee {
     int age;
     String phone;
     String address;
-    double salary;   // 🔥 MUST be double
-
-    void printSalary() {
-        System.out.println(salary);
-    }
+    double salary;
 }
 
 // Officer class
@@ -28,35 +24,35 @@ public class EmployeeInheritance {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // -------- OFFICER INPUT --------
+        // Officer input
         Officer officer = new Officer();
         officer.name = sc.nextLine();
         officer.age = sc.nextInt();
         sc.nextLine();
         officer.phone = sc.nextLine();
         officer.address = sc.nextLine();
-        officer.salary = sc.nextDouble();   // 🔥 read as double
+        officer.salary = sc.nextDouble();
         sc.nextLine();
         officer.specialization = sc.nextLine();
 
-        // -------- MANAGER INPUT --------
+        // Manager input
         Manager manager = new Manager();
         manager.name = sc.nextLine();
         manager.age = sc.nextInt();
         sc.nextLine();
         manager.phone = sc.nextLine();
         manager.address = sc.nextLine();
-        manager.salary = sc.nextDouble();   // 🔥 read as double
+        manager.salary = sc.nextDouble();
         sc.nextLine();
         manager.department = sc.nextLine();
 
-        // -------- OUTPUT --------
+        // Output
         System.out.println("Officer:");
         System.out.println(officer.name);
         System.out.println(officer.age);
         System.out.println(officer.phone);
         System.out.println(officer.address);
-        System.out.println(officer.salary);        // prints .0
+        System.out.println(officer.salary);
         System.out.println(officer.specialization);
 
         System.out.println("Manager:");
@@ -64,7 +60,7 @@ public class EmployeeInheritance {
         System.out.println(manager.age);
         System.out.println(manager.phone);
         System.out.println(manager.address);
-        System.out.println(manager.salary);        // prints .0
+        System.out.println(manager.salary);
         System.out.println(manager.department);
     }
 }
